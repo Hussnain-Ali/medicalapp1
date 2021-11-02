@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial Narrow Bold', sans-serif;
+}
+
+/* NavBar.jsx */
+.navbar {
+  display: none;
+}
+.navbar-brand {
+  color: #1c48ab !important;
+}
+.boutique {
+  font-weight: 1000;
+}
+
+/* HeaderSec.jsx*/
+.header-sec {
+  color: white;
+  background-color: #1c48ab;
+  height: 85vh;
+}
+.header-inner {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 90px;
+}
+.header-heading {
+  font-size: 80px;
+}
+
+/* todoSec.jsx */
+.todo-sec {
+  margin-top: -180px;
+}
+.todo-heading {
+  color: white;
+  font-weight: 1000;
+  padding-left: 20px;
+}
+
+.modal-header {
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0 30px;
+  color: #203560;
+}
+.modal-header .date-time {
+  font-size: 13px;
+  color: #585858;
+}
+.modal-body {
+  margin: 0 15px;
+  font-size: 13px;
+  color: #777c88;
+}
+.modal-body div p {
+  margin-top: -3px;
+  margin-left: 3px;
+  word-spacing: 2px;
+}
+.modal-button {
+  margin: 0 30px 20px 30px;
+  padding: 10px 0;
+  border-radius: 10px;
+  color: #fda510;
+  font-weight: 900;
+  font-style: normal;
+  font-size: small;
+  background-color: transparent;
+  border: 2px solid #fda510;
+}
+.modal-dialog.first .modal-button {
+  margin-top: 49px;
+}
+.modal-dialog.third .modal-button {
+  margin-top: 25px;
+}
+.modal-button:hover {
+  color: white;
+  background-color: #fda510;
+}
+.badge-icon {
+  font-size: 12px;
+  background-color: #6fa1ff;
+  color: white;
+  border-radius: 50%;
+  padding: 3px 4px;
+}
+/* get-perk.jsx */
+.get-perk {
+  margin-top: 80px;
+}
+.perk {
+  margin-left: 50px;
+}
+.perks-row {
+  margin-top: 38px;
+}
+/* cards */
+.card-img,
+.card-img-top {
+  border-top-left-radius: calc(0.35rem - 1px);
+  border-top-right-radius: calc(0.35rem - 1px);
+  border-bottom-left-radius: calc(0.35rem - 1px);
+  border-bottom-right-radius: calc(0.35rem - 1px);
+}
+.card-title {
+  font-weight: 600;
+}
+.card-body {
+  padding: 30px 0 0 0rem;
+}
+.card {
+  border: 0;
+}
+
+/* Media */
+@media (max-width: 770px) {
+  /* navbar.jsx */
+  .navbar {
+    display: block;
+  }
+
+  /* headerSec.jsx */
+  .header-sec {
+    height: 35vh;
+  }
+  .header-content {
+    display: none;
+  }
+  .header-inner {
+    margin-top: 40px;
+  }
+  .header-heading {
+    font-size: 30px;
+  }
+
+  /* todoSec.jsx */
+  .todo-sec {
+    margin-top: -140px;
+  }
+  .todo-heading {
+    display: none;
+  }
+}
+
+@media (min-width: 1366px) {
+  /* HeaderSec.jsx*/
+  .header-sec {
+    height: 80vh;
+  }
+  /* todo.jsx */
+  .todo-sec {
+    margin-top: -185px;
+  }
+}
+@media (min-width: 600px) {
+  .btn-close {
+    display: none;
+  }
+}
+.modal-title.h4 {
+  font-style: normal;
+  color: rgb(32, 53, 96);
+  font-weight: 900;
+  letter-spacing: -0.2px;
+}
+.modal-content {
+  border-radius: 0.7rem;
+}
