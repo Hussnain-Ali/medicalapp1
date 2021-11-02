@@ -2,18 +2,18 @@ import Button from "@restart/ui/esm/Button";
 import React from "react";
 import { Card, Col, Container, Modal, Row } from "react-bootstrap";
 import service from "../images/service.jpg";
-import {ImUsers} from "react-icons/im"
+// import file from '../app.module.css';
 const GetPerks = () => {
   return (
     <Container className="get-perk">
       <Row className="d-flex justify-content-center">
-        <Col xs={10} sm={8} md={8}>
-          <p className="youget">You Get </p>
+        <Col xs={12} sm={8} md={8}>
+          <h3 style={{fontWeight:"900"}}>You Get </h3>
           <Row>
             <Col xs={10} sm={8} md={6}>
               <Modal.Dialog className="modal-dialog first">
                 <Modal.Header className="modal-header" closeButton>
-                  <Modal.Title><ImUsers color="83AEFF"/>Primary Care Visist Available</Modal.Title>
+                  <Modal.Title>Primary Care Visist Available</Modal.Title>
                 </Modal.Header>
                 
 
@@ -125,63 +125,140 @@ const GetPerks = () => {
             </Col>
           </Row>
         </Col>
-        <Col xs={10} sm={4} md={4} className="d-flex justify-content-end">
-          <Row className="d-flex justify-content-end">
-            <p className="mt-4">Perks</p>
-            <Col xs={10} md={12}>
-              <Card style={{ width: "18rem", marginTop: "28px" }}>
-                <p style={{ color: "#6FA1FF" }}>
+        <Col xs={12} sm={4} md={4} >
+          <Row>
+           
+            <Col xs={6} md={12}>
+              <Row>
+              <Col xs={12} md={2}></Col>
+                <Col xs={12} md={8}>
+                {/* //////////////////////// */}
+                <h3  style={{fontWeight:"700"}}>My Perks </h3>
+                <Card>
+                <p  className="myPerksEduc" style={{ color: "#6FA1FF"  }}>
                   <i class="fas fa-graduation-cap"></i> Educational Resources
                 </p>
-                <Card.Img variant="top" src={service} />
-                <Card.Body>
-                  <Card.Title>
+                <Card.Img variant="top" src={service} style={{}} />
+                <div>
+                  <h2 className="myPerksEductxt">
                     What to Expect When You're Expecting...a Colonoscopy
-                  </Card.Title>
-                  <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </Card.Text>
+                  </h2>
+                  <p className="myPerksEdutxts">
+                   National Colon Health Week is coming up.
+                   Most adults can experct to get their first
+                   colonoscopy  at age 50 Thee National...
+                  </p>
                   <Button
-                    variant="primary"
-                    style={{
+                      variant="primary"
+                      style={{
                       background: " transparent",
                       border: "0",
                       color: "#fda510",
                     }}
+                    className="myPerksEdubtn"
                   >
                     Learn More <i class="fas fa-caret-right"></i>
                   </Button>
-                </Card.Body>
+                </div>
               </Card>
+
+
+
+                {/* //////////////////////////// */}
+
+                </Col>
+                <Col xs={12} md={2}></Col>
+              
+              </Row>
             </Col>
-            <Col xs={10} md={12}>
-              <Card style={{ width: "18rem", marginTop: "28px" }}>
-                <p style={{ color: "#6FA1FF" }}>
-                  <i class="fas fa-utensils"></i> Educational Resources
+
+            <Col xs={6} md={12}>
+              <Row className="paddingPerks">
+              <Col xs={12} md={2}></Col>
+                <Col xs={12} md={8}>
+                {/* //////////////////////// */}
+                <Card>
+                <p  className="myPerksEduc" style={{ color: "#6FA1FF"  }}>
+                  <i class="fas fa-utensils"></i> Cooking Center
                 </p>
-                <Card.Img variant="top" src={service} />
-                <Card.Body>
-                  <Card.Title>
-                    What to Expect When You're Expecting...a Colonoscopy
-                  </Card.Title>
-                  <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </Card.Text>
+                <Card.Img variant="top" src={service} style={{}} />
+                <div>
+                  <h2 className="myPerksEductxt">
+                    Hearty Chicken and Rice Soup
+                  </h2>
+                  <p className="myPerksEdutxts">
+                   just because your diet needs to consist of "bland" foods a few
+                   days before a colonscopy doesn't mean your meals need to 
+                   taste bland. Here's how to.... 
+                  </p>
                   <Button
-                    variant="primary"
-                    style={{
+                      variant="primary"
+                      style={{
                       background: " transparent",
                       border: "0",
                       color: "#fda510",
                     }}
+                    className="myPerksEdubtn"
                   >
                     Learn More <i class="fas fa-caret-right"></i>
                   </Button>
-                </Card.Body>
+                </div>
               </Card>
+
+
+
+                {/* //////////////////////////// */}
+
+                </Col>
+                <Col xs={12} md={2}></Col>
+              
+              </Row>
             </Col>
+            
+            <Col xs={6} md={12}>
+              <Row>
+              <Col xs={12} md={2}></Col>
+                <Col xs={12} md={8}>
+                {/* //////////////////////// */}
+                <Card>
+                <p  className="myPerksEduc" style={{ color: "#6FA1FF"  }}>
+                  <i class="fas fa-graduation-cap"></i> Educational Resources
+                </p>
+                <Card.Img variant="top" src={service} style={{}} />
+                <div>
+                  <h2 className="myPerksEductxt">
+                    What to Expect When You're Expecting...a Colonoscopy
+                  </h2>
+                  <p className="myPerksEdutxts">
+                   National Colon Health Week is coming up.
+                   Most adults can experct to get their first
+                   colonoscopy  at age 50 Thee National...
+                  </p>
+                  <Button
+                      variant="primary"
+                      style={{
+                      background: " transparent",
+                      border: "0",
+                      color: "#fda510",
+                    }}
+                    className="myPerksEdubtn"
+                  >
+                    Learn More <i class="fas fa-caret-right"></i>
+                  </Button>
+                </div>
+              </Card>
+
+
+
+                {/* //////////////////////////// */}
+
+                </Col>
+                <Col xs={12} md={2}></Col>
+              
+              </Row>
+            </Col>
+
+            
             
           </Row>
         </Col>
