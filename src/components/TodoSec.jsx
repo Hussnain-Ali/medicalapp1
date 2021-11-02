@@ -13,7 +13,17 @@ const TodoSec = () => {
         <Row className="d-flex justify-content-center">
           <Col sm={10} md={4} xs={10}>
             
-            <Modal.Dialog show={show} className="modal-dialog first">
+            <Modal.Dialog show={show} className="modal-dialog first" onMouseEnter={() => {
+              const bt1 = document.getElementById("bt1")
+              bt1.style.background = "#fda510"
+              bt1.style.color="white"
+              
+            }}
+            onMouseLeave={() => {
+              const bt1 = document.getElementById("bt1")
+              bt1.style.background = "white"
+              bt1.style.color="#fda510"
+            }}>
               <Modal.Header className="modal-header1 " closeButton >
                 <Modal.Title style={{fontsize: "10px" }}>Appointments</Modal.Title>
               </Modal.Header>
@@ -38,14 +48,24 @@ const TodoSec = () => {
                 </p>
               </Modal.Body>
 
-              <Button className="modal-button" variant="primary">
+              <Button className="modal-button" variant="primary" id="bt1">
                 View appointment details
               </Button>
             </Modal.Dialog>
             
           </Col>
           <Col xs={10} sm={6} md={4}>
-            <Modal.Dialog show={show} className="modal-dialog second">
+            <Modal.Dialog show={show} className="modal-dialog second"  onMouseEnter={() => {
+              const bt2 = document.getElementById("bt2")
+              bt2.style.background = "#fda510"
+              bt2.style.color="white"
+              
+            }}
+             onMouseLeave={() => {
+              const bt2 = document.getElementById("bt2")
+              bt2.style.background = "white"
+              bt2.style.color="#fda510"
+            }}>
               <Modal.Header   className="modal-header1" closeButton>
                 <Modal.Title>Doctor's Orders</Modal.Title>
               </Modal.Header>
@@ -85,13 +105,23 @@ const TodoSec = () => {
                 </div>
               </Modal.Body>
 
-              <Button className="modal-button" variant="primary">
+              <Button className="modal-button" variant="primary" id="bt2">
                 View all Doctor's Orders
               </Button>
             </Modal.Dialog>
           </Col>
           <Col xs={10} sm={6} md={4}>
-            <Modal.Dialog show={show} className="modal-dialog third">
+            <Modal.Dialog show={show} className="modal-dialog third" onMouseEnter={() => {
+              const bt3 = document.getElementById("bt3")
+              bt3.style.background = "#fda510"
+              bt3.style.color="white"
+              
+            }}
+             onMouseLeave={() => {
+              const bt3 = document.getElementById("bt3")
+              bt3.style.background = "white"
+              bt3.style.color="#fda510"
+            }}>
               <Modal.Header className="modal-header1" closeButton>
                 <Modal.Title>Tasks</Modal.Title>
               </Modal.Header>
@@ -128,7 +158,7 @@ const TodoSec = () => {
                 </div>
               </Modal.Body>
 
-              <Button className="modal-button" variant="primary">
+              <Button className="modal-button" variant="primary" id="bt3">
                 Check My Tasks
               </Button>
             </Modal.Dialog>

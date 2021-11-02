@@ -150,7 +150,6 @@
   }
 }
 
-
 @media (min-width: 1366px) {
   /* HeaderSec.jsx*/
   .header-sec {
@@ -224,78 +223,68 @@
 
 @media screen and (min-width: 601px) {
   .myPerksEduc {
-  font-size: 13px;
-  font-weight: 900;
-  padding-top:1.7rem;
-  word-spacing: -1px;
+    font-size: 13px;
+    font-weight: 900;
+    padding-top: 1.7rem;
+    word-spacing: -1px;
   }
 }
 
 @media screen and (max-width: 600px) {
-.myPerksEduc{
-  font-size: 12px;
-  font-weight: 900;
-
+  .myPerksEduc {
+    font-size: 12px;
+    font-weight: 900;
+  }
 }
-}
-
 
 @media screen and (min-width: 601px) {
   .myPerksEductxt {
-  color:#555555;
-  font-size: 15px;
-  margin-top: 6px;
-  width: 90%;
-  padding: 10px 0 5px 0;
-  font-weight: 900;
-  color:#626262;
+    color: #555555;
+    font-size: 15px;
+    margin-top: 6px;
+    width: 90%;
+    padding: 10px 0 5px 0;
+    font-weight: 900;
+    color: #626262;
   }
 }
 
 @media screen and (max-width: 600px) {
-.myPerksEductxt{
-  color:#555555;
-  font-size: 18px;
-  font-weight: 700;
-
+  .myPerksEductxt {
+    color: #555555;
+    font-size: 18px;
+    font-weight: 700;
+  }
 }
-}
-
-
 
 @media screen and (min-width: 601px) {
   .myPerksEdutxts {
-    color:#8C909A;
-  font-weight: 400;
-  font-size: 13px;
-  word-spacing: -1px;
-  width: 100%;
-  margin-bottom: 8px;
+    color: #8c909a;
+    font-weight: 400;
+    font-size: 13px;
+    word-spacing: -1px;
+    width: 100%;
+    margin-bottom: 8px;
   }
 }
 
 @media screen and (max-width: 600px) {
-.myPerksEdutxts{
-  color:#8C909A;
-  
+  .myPerksEdutxts {
+    color: #8c909a;
+  }
 }
-}
-
 
 @media screen and (min-width: 601px) {
   .myPerksEdubtn {
-   font-weight: 600;
+    font-weight: 600;
   }
 }
 
 @media screen and (max-width: 600px) {
-.myPerksEdubtn{
-  font-weight: 600;
-
+  .myPerksEdubtn {
+    font-weight: 600;
+  }
 }
-}
-
-
 
 @media screen and (min-width: 601px) {
   .paddingPerks {
@@ -303,8 +292,28 @@
 }
 
 @media screen and (max-width: 600px) {
-.paddingPerks{
-  padding-top:2.2rem;
- 
+  .paddingPerks {
+    padding-top: 2.2rem;
+  }
 }
+.errorcircle {
+  color: #ff7c76;
+  margin-top: -60px;
+}
+.powered-div {
+  margin: 3% auto;
+}
+.poweredtxt {
+  display: inline;
+  font-size: 8px;
+  padding-top: 3rem;
+  display: inline;
+  margin-left: 1rem;
+  align-items: center;
+}
+.goodpx {
+  margin-top: 3rem;
+  display: inline;
+  background-color: #ffe574;
+  
 }
