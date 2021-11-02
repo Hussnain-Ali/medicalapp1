@@ -11,7 +11,7 @@ const TodoSec = () => {
           <h1 className="todo-heading">To-Do</h1>
         </Row>
         <Row className="d-flex justify-content-center">
-          <Col sm={10} md={4} xs={12}>
+          <Col sm={10} md={4} xs={10}>
             
             <Modal.Dialog show={show} className="modal-dialog first">
               <Modal.Header className="modal-header1 " closeButton >

@@ -173,4 +173,50 @@
 }
 .modal-content {
   border-radius: 0.7rem;
+  height: fit-content;
+}
+.usericon {
+  color: #83aeff;
+  width: 10%;
+  height: 2%;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+.jerkcontent {
+  font-size: medium;
+  color: #000;
+  font-weight: 400;
+}
+.gerkfooter {
+  float: left;
+  margin-left: 1rem;
+  font-weight: 900;
+}
+.unlimited {
+  color: #83aeff;
+  font-weight: 900;
+  margin-left: 1rem;
+}
+.helpwith {
+  font-weight: 900;
+  color: #fda510;
+  font-size: small;
+  text-align: center;
+  margin-top: 0%;
+}
+.searchicon[type='submit'] {
+  height: 45px;
+  border: 0.6px solid gray;
+  color: #fda510;
+  background-color: white;
+  width: 12%;
+}
+.searchicon[type='search'] {
+  height: 45px;
+  border: 0.6px solid gray;
+  color: #fda510;
+  background-color: white;
+  width: 65%;
+  margin-left: 9%;
+  padding-left: 10px;
 }
