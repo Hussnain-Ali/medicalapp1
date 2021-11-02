@@ -6,14 +6,15 @@ import {ImUsers} from "react-icons/im"
 import { MdPhoneInTalk } from "react-icons/md"
 import { GrUserFemale } from "react-icons/gr"
 import { FaRegHospital } from "react-icons/fa"
-
+import { MdSupportAgent } from "react-icons/md"
+import { FaPrescription } from "react-icons/fa"
+import {GiMedicines} from "react-icons/gi"
 const GetPerks = () => {
   return (
     <Container className="get-perk">
       <Row className="d-flex justify-content-center">
-        <Col xs={10} sm={8} md={8}>
-          <p className="youget">You Get </p>
-        
+        <Col xs={12} sm={8} md={8}>
+          <h3 style={{fontWeight:"900"}}>You Get </h3>
           <Row>
              <Col xs={12} sm={12} md={6}>
               <Modal.Dialog className="modal-dialog first">
@@ -71,7 +72,7 @@ const GetPerks = () => {
             <Row>
              <Col xs={12} sm={12} md={6}>
               <Modal.Dialog className="modal-dialog first">
-                <GrUserFemale className="usericon"/>
+                <MdSupportAgent  className="usericon"/>
                 <Modal.Header className="modal-header" closeButton>
                   <Modal.Title >Care Concierge</Modal.Title>
                 </Modal.Header>
@@ -134,7 +135,7 @@ const GetPerks = () => {
         <Row>
              <Col xs={12} sm={12} md={6}>
               <Modal.Dialog className="modal-dialog first">
-                <ImUsers className="usericon"/>
+                <FaPrescription className="usericon"/>
                 <Modal.Header className="modal-header" closeButton>
                   <Modal.Title >Prescription Search</Modal.Title>
                 </Modal.Header>
@@ -163,7 +164,7 @@ const GetPerks = () => {
             
           <Col xs={12} sm={12} md={6}>
               <Modal.Dialog className="modal-dialog first">
-                <MdPhoneInTalk className="usericon"/>
+                <GiMedicines className="usericon"/>
                 <Modal.Header className="modal-header" closeButton>
                   <Modal.Title >Vitamins & Supplements</Modal.Title>
                 </Modal.Header>
@@ -187,9 +188,141 @@ const GetPerks = () => {
           </Row>
           
         </Col>
-        <Col xs={10} sm={4} md={4} className="d-flex justify-content-end">
-          <Row className="d-flex justify-content-end">
+        <Col xs={12} sm={4} md={4} >
+          <Row>
+           
+            <Col xs={6} md={12}>
+              <Row>
+              <Col xs={12} md={2}></Col>
+                <Col xs={12} md={8}>
+                {/* //////////////////////// */}
+                <h3  style={{fontWeight:"700"}}>My Perks </h3>
+                <Card>
+                <p  className="myPerksEduc" style={{ color: "#6FA1FF"  }}>
+                  <i class="fas fa-graduation-cap"></i> Educational Resources
+                </p>
+                <Card.Img variant="top" src={service} style={{}} />
+                <div>
+                  <h2 className="myPerksEductxt">
+                    What to Expect When You're Expecting...a Colonoscopy
+                  </h2>
+                  <p className="myPerksEdutxts">
+                   National Colon Health Week is coming up.
+                   Most adults can experct to get their first
+                   colonoscopy  at age 50 Thee National...
+                  </p>
+                  <Button
+                      variant="primary"
+                      style={{
+                      background: " transparent",
+                      border: "0",
+                      color: "#fda510",
+                    }}
+                    className="myPerksEdubtn"
+                  >
+                    Learn More <i class="fas fa-caret-right"></i>
+                  </Button>
+                </div>
+              </Card>
+
+
+
+                {/* //////////////////////////// */}
+
+                </Col>
+                <Col xs={12} md={2}></Col>
               
+              </Row>
+            </Col>
+
+            <Col xs={6} md={12}>
+              <Row className="paddingPerks">
+              <Col xs={12} md={2}></Col>
+                <Col xs={12} md={8}>
+                {/* //////////////////////// */}
+                <Card>
+                <p  className="myPerksEduc" style={{ color: "#6FA1FF"  }}>
+                  <i class="fas fa-utensils"></i> Cooking Center
+                </p>
+                <Card.Img variant="top" src={service} style={{}} />
+                <div>
+                  <h2 className="myPerksEductxt">
+                    Hearty Chicken and Rice Soup
+                  </h2>
+                  <p className="myPerksEdutxts">
+                   just because your diet needs to consist of "bland" foods a few
+                   days before a colonscopy doesn't mean your meals need to 
+                   taste bland. Here's how to.... 
+                  </p>
+                  <Button
+                      variant="primary"
+                      style={{
+                      background: " transparent",
+                      border: "0",
+                      color: "#fda510",
+                    }}
+                    className="myPerksEdubtn"
+                  >
+                    Learn More <i class="fas fa-caret-right"></i>
+                  </Button>
+                </div>
+              </Card>
+
+
+
+                {/* //////////////////////////// */}
+
+                </Col>
+                <Col xs={12} md={2}></Col>
+              
+              </Row>
+            </Col>
+            
+            <Col xs={6} md={12}>
+              <Row>
+              <Col xs={12} md={2}></Col>
+                <Col xs={12} md={8}>
+                {/* //////////////////////// */}
+                <Card>
+                <p  className="myPerksEduc" style={{ color: "#6FA1FF"  }}>
+                  <i class="fas fa-graduation-cap"></i> Educational Resources
+                </p>
+                <Card.Img variant="top" src={service} style={{}} />
+                <div>
+                  <h2 className="myPerksEductxt">
+                    What to Expect When You're Expecting...a Colonoscopy
+                  </h2>
+                  <p className="myPerksEdutxts">
+                   National Colon Health Week is coming up.
+                   Most adults can experct to get their first
+                   colonoscopy  at age 50 Thee National...
+                  </p>
+                  <Button
+                      variant="primary"
+                      style={{
+                      background: " transparent",
+                      border: "0",
+                      color: "#fda510",
+                    }}
+                    className="myPerksEdubtn"
+                  >
+                    Learn More <i class="fas fa-caret-right"></i>
+                  </Button>
+                </div>
+              </Card>
+
+
+
+                {/* //////////////////////////// */}
+
+                </Col>
+                <Col xs={12} md={2}></Col>
+              
+              </Row>
+            </Col>
+
+            
+            
           </Row>
         </Col>
       </Row>
