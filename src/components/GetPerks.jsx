@@ -12,6 +12,7 @@ import {GiMedicines} from "react-icons/gi"
 import 'antd/dist/antd.css';
 import { Progress } from 'antd';
 import { MinusOutlined, PlusOutlined } from '@ant-design/icons';
+import { BiErrorCircle } from "react-icons/bi"
 
 const GetPerks = () => {
   const [progress, setProgress] = useState(75);
@@ -55,7 +56,7 @@ const GetPerks = () => {
                   </div>
                 
                 <Button className="modal-button" variant="primary">
-                  View appointment details
+                  Book appointment
                 </Button>
               </Modal.Dialog>
             </Col>
@@ -70,9 +71,8 @@ const GetPerks = () => {
 
                 <Modal.Body className="modal-body">
                   <p>
-                    Your appointment with John Smithn is confirmed for
-                    <strong> Wednesday,July</strong> at <strong>9:00AM</strong>.
-                    You can prepare by reviewing your appointment details.
+                    You get virtual visits with a qualified healthcare provider
+                    who is ready to help you get and stay healthy-and you get to stay in your pajamas!
                   </p>
                 </Modal.Body>
                
@@ -81,7 +81,7 @@ const GetPerks = () => {
                 </h6>
                 <h5 className="unlimited"> Unlimited: </h5>
                 <Button className="modal-button" variant="primary">
-                  View appointment details
+                  Book appointment
                 </Button>
              
               </Modal.Dialog>
@@ -102,14 +102,16 @@ const GetPerks = () => {
 
                 <Modal.Body className="modal-body">
                   <p className="gerkcontent">
-                    You get <strong>3 visits</strong> with your
-                    Primary Care Doctor annually. Your provider is available for
-                    regular checkups, sick visits and referrals.
+                    Let's face it-few people understand healthcare-we do.
+                    Don't be shy-got a question? Give our Care Concierge a call-form booking
+                    an appointment, finding affordable care, getting a referral, and much, much more.
+                    Our qualified team is here to be your advocate and take the healthcare journey with you.
                   </p>
                 </Modal.Body>
                 
                   
                  
+               
 
                 
                 <Button className="modal-button" variant="primary">
@@ -130,15 +132,13 @@ const GetPerks = () => {
 
                 <Modal.Body className="modal-body">
                   <p>
-                    Your appointment with John Smithn is confirmed for
-                    <strong> Wednesday,July</strong> at <strong>9:00AM</strong>.
-                    You can prepare by reviewing your appointment details.
+                    Finding a hospital can be overwhelming.
+                    Finding the right hospital even harder.
+                    That is why our team has already selected hospitals with the right prices
+                    for you.
                   </p>
                 </Modal.Body>
-                 <h6 className="gerkfooter">
-                    Visits Available:
-                </h6>
-                <h5 className="unlimited"> Unlimited: </h5>
+ 
                 <Button className="modal-button" variant="primary">
                   Find A Hospital
                 </Button>
@@ -146,9 +146,12 @@ const GetPerks = () => {
                   Help with a past bill
                   <i class="fas fa-caret-right"></i>
                 </p>
-                <div  style={{textAlign:"center", color:"#9D9D9D"}}>
+                
+                <div style={{ textAlign: "center", color: "#9D9D9D" }}>
+                  <hr/>
+                   <BiErrorCircle className="errorcircle"/>
                 <p>Have an Emergency?</p>
-                <p>Dial <b>911</b> on your phone.</p>
+                <p>Dial <strong>911</strong> on your phone.</p>
                 </div>
               </Modal.Dialog>
             </Col>
@@ -168,9 +171,10 @@ const GetPerks = () => {
 
                 <Modal.Body className="modal-body">
                   <p className="gerkcontent">
-                    You get <strong>3 visits</strong> with your
-                    Primary Care Doctor annually. Your provider is available for
-                    regular checkups, sick visits and referrals.
+                    There are not enough words in the universe to explain why drug prices
+                    are so confusing, so instead wew are just making sure you get
+                    the best price available. Remember to stay on your medications till
+                    your doctor advises otherwise.
                   </p>
                 </Modal.Body>
                 
@@ -179,11 +183,10 @@ const GetPerks = () => {
                   <input className="searchicon" type="search" name="search" placeholder="Type drug name.." ></input>
                  <button className="searchicon" type="submit"><i class="fa fa-search"></i> </button>
                 </form>
-
-                
-                <Button className="modal-button" variant="primary">
-                  View appointment details
-                </Button>
+                <div  className="powered-div">
+                  <span className="poweredtxt">Powered by</span>
+                  <div className="goodpx"><span><strong style={{ fontWeight: "900", fontSize: "10px", padding:"1rem"}}>GOOD</strong>Px</span></div>
+               </div>
               </Modal.Dialog>
             </Col>
             
@@ -198,9 +201,9 @@ const GetPerks = () => {
 
                 <Modal.Body className="modal-body">
                   <p>
-                    Your appointment with John Smithn is confirmed for
-                    <strong> Wednesday,July</strong> at <strong>9:00AM</strong>.
-                    You can prepare by reviewing your appointment details.
+                    You get regular home deliveries of high quality,
+                    provider-recommended vitamins and supplements, all personalize to you health needs and delivered right
+                    to your door.
                   </p>
                   <p style={{textAlign:"left"}}className="helpwith">
                   Help with a past bill
@@ -313,17 +316,16 @@ const GetPerks = () => {
                 {/* //////////////////////// */}
                 <Card>
                 <p  className="myPerksEduc" style={{ color: "#6FA1FF"  }}>
-                  <i class="fas fa-graduation-cap"></i> Educational Resources
+                  <i class="fas fa-graduation-cap"></i> Health Tips
                 </p>
                 <Card.Img variant="top" src={service} style={{}} />
                 <div>
                   <h2 className="myPerksEductxt">
-                    What to Expect When You're Expecting...a Colonoscopy
+                    5 ways to Word Off Biting Insects-without using DEET
                   </h2>
                   <p className="myPerksEdutxts">
-                   National Colon Health Week is coming up.
-                   Most adults can experct to get their first
-                   colonoscopy  at age 50 Thee National...
+                        Warm weather brings with it outdoor activities... and bugs.
+                        Before you reach for the bug spray with DEET, here are some...
                   </p>
                   <Button
                       variant="primary"
