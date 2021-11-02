@@ -26,12 +26,12 @@ const GetPerks = () => {
              <Col xs={12} sm={12} md={6}>
               <Modal.Dialog className="modal-dialog first">
                 <ImUsers className="usericon"/>
-                <Modal.Header className="modal-header" closeButton>
-                  <Modal.Title >Primary Care Visist Available</Modal.Title>
+                <Modal.Header className="modal-header" >
+                  <Modal.Title class="textres" >Primary Care Visist Available</Modal.Title>
                 </Modal.Header>
                 
 
-                <Modal.Body className="modal-body">
+                <Modal.Body className="modal-body mobVisible " >
                   <p className="gerkcontent">
                     You get <strong>3 visits</strong> with your
                     Primary Care Doctor annually. Your provider is available for
@@ -62,14 +62,14 @@ const GetPerks = () => {
             </Col>
             
            <Col xs={12} sm={12} md={6}>
-              <Modal.Dialog style={{height:"500px"}} className="modal-dialog first">
+              <Modal.Dialog  className="modal-dialog first">
                 <MdPhoneInTalk className="usericon"/>
-                <Modal.Header className="modal-header" closeButton>
+                <Modal.Header className="modal-header" >
                   <Modal.Title >Telehealth</Modal.Title>
                 </Modal.Header>
                 
 
-                <Modal.Body className="modal-body">
+                <Modal.Body className="modal-body mobVisible ">
                   <p>
                     You get virtual visits with a qualified healthcare provider
                     who is ready to help you get and stay healthy-and you get to stay in your pajamas!
@@ -87,20 +87,19 @@ const GetPerks = () => {
               </Modal.Dialog>
             </Col>
           
-          </Row>
+         
 
-            <Row>
              <Col xs={12} sm={12} md={6}>
               
-              <Modal.Dialog style={{height:"500px"}} className="modal-dialog first">
+              <Modal.Dialog  className="modal-dialog first">
                
                 <MdSupportAgent   className="usericon"/>
-                <Modal.Header className="modal-header" closeButton>
+                <Modal.Header className="modal-header" >
                   <Modal.Title >Care Concierge</Modal.Title>
                 </Modal.Header>
                 
 
-                <Modal.Body className="modal-body">
+                <Modal.Body className="modal-body mobVisible">
                   <p className="gerkcontent">
                     Let's face it-few people understand healthcare-we do.
                     Don't be shy-got a question? Give our Care Concierge a call-form booking
@@ -114,10 +113,10 @@ const GetPerks = () => {
                
 
                 
-                <Button className="modal-button" variant="primary">
+                <Button  style={{paddingBottom:"25px;"}}className="modal-button" variant="primary">
                   Call(501)489-2901
                 </Button>
-               
+                <div style={{paddingBottom:"96px"}}></div>
               </Modal.Dialog>
 
             </Col>
@@ -125,12 +124,12 @@ const GetPerks = () => {
              <Col xs={12} sm={12} md={6}>
               <Modal.Dialog className="modal-dialog first">
                 <FaRegHospital className="usericon"/>
-                <Modal.Header className="modal-header" closeButton>
+                <Modal.Header className="modal-header" >
                   <Modal.Title >Hospital Finder</Modal.Title>
                 </Modal.Header>
                 
 
-                <Modal.Body className="modal-body">
+                <Modal.Body className="modal-body mobVisible">
                   <p>
                     Finding a hospital can be overwhelming.
                     Finding the right hospital even harder.
@@ -161,15 +160,15 @@ const GetPerks = () => {
         <Row>
              <Col xs={12} sm={12} md={6}>
 
-              <Modal.Dialog  style={{height:"520px"}} className=" modal-dialog first  ">
+              <Modal.Dialog   className=" modal-dialog first  ">
                 <FaPrescription className="usericon"/>
 
-                <Modal.Header className="modal-header" closeButton>
-                  <Modal.Title >Prescription Search</Modal.Title>
+                <Modal.Header className="modal-header" >
+                  <Modal.Title >Prescription Search </Modal.Title>
                 </Modal.Header>
                 
 
-                <Modal.Body className="modal-body">
+                <Modal.Body className="modal-body mobVisible">
                   <p className="gerkcontent">
                     There are not enough words in the universe to explain why drug prices
                     are so confusing, so instead wew are just making sure you get
@@ -192,23 +191,24 @@ const GetPerks = () => {
             
           <Col xs={12} sm={12} md={6}>
 
-              <Modal.Dialog className="modal-dialog first cardHeight">
+              <Modal.Dialog className="modal-dialog first ">
                 <GiMedicines className="usericon"/>
-                <Modal.Header className="modal-header" closeButton>
+                <Modal.Header className="modal-header" >
                   <Modal.Title >Vitamins & Supplements</Modal.Title>
                 </Modal.Header>
                 
 
                 <Modal.Body className="modal-body">
-                  <p>
+                  <p className=" mobVisible">
                     You get regular home deliveries of high quality,
                     provider-recommended vitamins and supplements, all personalize to you health needs and delivered right
                     to your door.
                   </p>
                   <p style={{textAlign:"left"}}className="helpwith">
-                  Help with a past bill
+                  Enroll or Arjust Order
                   <i class="fas fa-caret-right"></i>
                 </p>
+                <div style={{paddingBottom:"73px"}}></div>
                 </Modal.Body>
 
               </Modal.Dialog>
@@ -227,12 +227,12 @@ const GetPerks = () => {
               <Col xs={12} md={2}></Col>
                 <Col xs={12} md={8}>
                 {/* //////////////////////// */}
-                <h3  style={{fontWeight:"700"}}>My Perks </h3>
+                <h3  style={{fontWeight:"700" , paddingLeft:"10%"}}>My Perks </h3>
                 <Card>
                 <p  className="myPerksEduc" style={{ color: "#6FA1FF"  }}>
                   <i class="fas fa-graduation-cap"></i> Educational Resources
                 </p>
-                <Card.Img variant="top" src={service} style={{}} />
+                <Card.Img variant="top" src={service} />
                 <div>
                   <h2 className="myPerksEductxt">
                     What to Expect When You're Expecting...a Colonoscopy

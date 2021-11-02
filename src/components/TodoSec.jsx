@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import Button from "@restart/ui/esm/Button";
 import { Col, Container, Modal, Row } from "react-bootstrap";
+import Accordion from 'react-bootstrap/Accordion';
 
 const TodoSec = () => {
   const [show, setShow] = useState(false);
   return (
     <>
-      <Container className="todo-sec">
+      <Container className="todo-sec desktopView">
         <Row>
           <h1 className="todo-heading">To-Do</h1>
         </Row>
@@ -110,6 +111,7 @@ const TodoSec = () => {
               </Button>
             </Modal.Dialog>
           </Col>
+
           <Col xs={10} sm={6} md={4}>
             <Modal.Dialog show={show} className="modal-dialog third" onMouseEnter={() => {
               const bt3 = document.getElementById("bt3")
@@ -163,7 +165,73 @@ const TodoSec = () => {
               </Button>
             </Modal.Dialog>
           </Col>
+
         </Row>
+      </Container>
+
+      <Container className="todo-sec mobView">
+      <Accordion>
+  <Accordion.Item eventKey="0">
+    <Accordion.Header>
+    <div className="modal-header1 "  >
+                <Modal.Title style={{fontsize: "10px" }}>Appointments</Modal.Title>
+              <div style={{marginTop:"15px;"}}>
+              <i style={{ color: "#6FA1FF" }} class="far fa-calendar-alt"><strong style={{color:"black"}}> 07/07/2021</strong> </i><br/>
+              <i style={{ color: "#6FA1FF" }} class="far fa-clock"><strong style={{color:"black"}}> 9:00AM</strong> </i>
+                </div>  
+              </div>
+             
+    </Accordion.Header>
+    <Accordion.Body>
+    <p>
+                  Your appointment with John Smithn is confirmed for
+                  <strong> Wednesday,July</strong> at <strong>9:00AM</strong>.
+                  You can prepare by reviewing your appointment details.
+                </p>
+    </Accordion.Body>
+  </Accordion.Item>
+
+  <Accordion.Item eventKey="1">
+    <Accordion.Header>
+    <div className="modal-header1 "  >
+                <Modal.Title style={{fontsize: "10px" }}>Doctor's Orders</Modal.Title>
+              <div style={{marginTop:"15px;"}}>
+              <i style={{ color: "#6FA1FF" }} class="far fa-calendar-alt"><strong style={{color:"black"}}> 07/07/2021</strong> </i><br/>
+              <i style={{ color: "#6FA1FF" }} class="far fa-clock"><strong style={{color:"black"}}> 9:00AM</strong> </i>
+                </div>  
+              </div>
+             
+    </Accordion.Header>
+    <Accordion.Body>
+    <p>
+                  Your appointment with John Smithn is confirmed for
+                  <strong> Wednesday,July</strong> at <strong>9:00AM</strong>.
+                  You can prepare by reviewing your appointment details.
+                </p>
+    </Accordion.Body>
+  </Accordion.Item>
+
+  <Accordion.Item eventKey="2">
+    <Accordion.Header>
+    <div className="modal-header1 "  >
+                <Modal.Title style={{fontsize: "10px" }}>TASKS</Modal.Title>
+              <div style={{marginTop:"15px;"}}>
+              <span class="badge-icon">3</span>
+                  <strong> Timesensitive tasks to review</strong>
+                </div>  
+              </div>
+             
+    </Accordion.Header>
+    <Accordion.Body>
+    <p>
+                  Your appointment with John Smithn is confirmed for
+                  <strong> Wednesday,July</strong> at <strong>9:00AM</strong>.
+                  You can prepare by reviewing your appointment details.
+                </p>
+    </Accordion.Body>
+  </Accordion.Item>
+
+</Accordion>
       </Container>
     </>
   );

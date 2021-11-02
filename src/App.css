@@ -20,7 +20,7 @@
 .header-sec {
   color: white;
   background-color: #1c48ab;
-  height: 85vh;
+  height: 80vh;
 }
 .header-inner {
   margin: 0 auto;
@@ -153,7 +153,7 @@
 @media (min-width: 1366px) {
   /* HeaderSec.jsx*/
   .header-sec {
-    height: 80vh;
+    height: 55vh;
   }
   /* todo.jsx */
   .todo-sec {
@@ -287,10 +287,7 @@
 }
 
 
-@media screen and (min-width: 601px) {
-  .paddingPerks {
-  }
-}
+
 
 @media screen and (max-width: 600px) {
   .paddingPerks {
@@ -323,4 +320,51 @@
 }
 span.ant-progress-text{
   display:none;
+}
+
+
+@media screen and (max-width: 600px) {
+  .mobVisible {
+   display: none;
+  }
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+  .textres {
+  font-size:18px;
+  font-weight: 900;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .textres {
+   font-size: 20px;
+   font-weight: 900;
+  }
+}
+
+/* mobView */
+@media screen and (max-width: 600px) {
+  .desktopView {
+ display:none;
+  }
+}
+@media screen and (min-width: 601px) {
+  .desktopView {
+   
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mobView {
+ 
+  }
+}
+@media screen and (min-width: 601px) {
+  .mobView {
+    display:none;
+  }
 }
