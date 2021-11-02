@@ -1,5 +1,5 @@
 import Button from "@restart/ui/esm/Button";
-import React from "react";
+import React,{useState} from "react";
 import { Card, Col, Container, Modal, Row } from "react-bootstrap";
 import service from "../images/service.jpg";
 import {ImUsers} from "react-icons/im"
@@ -9,12 +9,18 @@ import { FaRegHospital } from "react-icons/fa"
 import { MdSupportAgent } from "react-icons/md"
 import { FaPrescription } from "react-icons/fa"
 import {GiMedicines} from "react-icons/gi"
+import 'antd/dist/antd.css';
+import { Progress } from 'antd';
+import { MinusOutlined, PlusOutlined } from '@ant-design/icons';
+
 const GetPerks = () => {
+  const [progress, setProgress] = useState(75);
   return (
     <Container className="get-perk">
       <Row className="d-flex justify-content-center">
         <Col xs={12} sm={8} md={8}>
           <h3 style={{fontWeight:"900"}}>You Get </h3>
+          
           <Row>
              <Col xs={12} sm={12} md={6}>
               <Modal.Dialog className="modal-dialog first">
@@ -36,15 +42,26 @@ const GetPerks = () => {
                   <h6 className="gerkfooter">
                     Visits Available:
                   </h6>
+                  <div  style={{width:"80%"}}className="gerkfooter">
+                    <div>
+                    <span  style ={{cursor:"pointer", color: progress == 25 ? "green" :"black"}}onClick={() =>setProgress(25)}  > 3</span>
+                   <span  onClick={() =>setProgress(50)} style={{paddingLeft:"25%", cursor:"pointer" ,color: progress == 50 ? "green" :"black"}} >2</span>
+                   <span  style={{paddingLeft:"25%" ,cursor:"pointer" , color: progress == 75 ? "green" :"black"}} onClick={() =>setProgress(75)}>1</span>
+                   <span style={{ paddingLeft:"25%" , cursor:"pointer" , color: progress == 100 ? "green" :"black"}} onClick={() =>setProgress(100)}>0</span>
+                    </div>
+                  
+                  <Progress percent={progress} />
 
+                  </div>
                 
                 <Button className="modal-button" variant="primary">
                   View appointment details
                 </Button>
               </Modal.Dialog>
             </Col>
-          <Col xs={12} sm={12} md={6}>
-              <Modal.Dialog className="modal-dialog first">
+            
+           <Col xs={12} sm={12} md={6}>
+              <Modal.Dialog style={{height:"500px"}} className="modal-dialog first">
                 <MdPhoneInTalk className="usericon"/>
                 <Modal.Header className="modal-header" closeButton>
                   <Modal.Title >Telehealth</Modal.Title>
@@ -58,6 +75,7 @@ const GetPerks = () => {
                     You can prepare by reviewing your appointment details.
                   </p>
                 </Modal.Body>
+               
                  <h6 className="gerkfooter">
                     Visits Available:
                 </h6>
@@ -65,14 +83,18 @@ const GetPerks = () => {
                 <Button className="modal-button" variant="primary">
                   View appointment details
                 </Button>
+             
               </Modal.Dialog>
             </Col>
           
           </Row>
+
             <Row>
              <Col xs={12} sm={12} md={6}>
-              <Modal.Dialog className="modal-dialog first">
-                <MdSupportAgent  className="usericon"/>
+              
+              <Modal.Dialog style={{height:"500px"}} className="modal-dialog first">
+               
+                <MdSupportAgent   className="usericon"/>
                 <Modal.Header className="modal-header" closeButton>
                   <Modal.Title >Care Concierge</Modal.Title>
                 </Modal.Header>
@@ -87,17 +109,18 @@ const GetPerks = () => {
                 </Modal.Body>
                 
                   
-                  <h6 className="gerkfooter">
-                    Visits Available:
-                  </h6>
+                 
 
                 
                 <Button className="modal-button" variant="primary">
                   Call(501)489-2901
                 </Button>
+               
               </Modal.Dialog>
+
             </Col>
-          <Col xs={12} sm={12} md={6}>
+
+             <Col xs={12} sm={12} md={6}>
               <Modal.Dialog className="modal-dialog first">
                 <FaRegHospital className="usericon"/>
                 <Modal.Header className="modal-header" closeButton>
@@ -134,8 +157,10 @@ const GetPerks = () => {
         
         <Row>
              <Col xs={12} sm={12} md={6}>
-              <Modal.Dialog className="modal-dialog first">
+
+              <Modal.Dialog  style={{height:"520px"}} className=" modal-dialog first  ">
                 <FaPrescription className="usericon"/>
+
                 <Modal.Header className="modal-header" closeButton>
                   <Modal.Title >Prescription Search</Modal.Title>
                 </Modal.Header>
@@ -163,7 +188,8 @@ const GetPerks = () => {
             </Col>
             
           <Col xs={12} sm={12} md={6}>
-              <Modal.Dialog className="modal-dialog first">
+
+              <Modal.Dialog className="modal-dialog first cardHeight">
                 <GiMedicines className="usericon"/>
                 <Modal.Header className="modal-header" closeButton>
                   <Modal.Title >Vitamins & Supplements</Modal.Title>
@@ -183,11 +209,13 @@ const GetPerks = () => {
                 </Modal.Body>
 
               </Modal.Dialog>
+
             </Col>
           
           </Row>
           
         </Col>
+
         <Col xs={12} sm={4} md={4} >
           <Row>
            
